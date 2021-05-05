@@ -135,7 +135,7 @@
     
     Quando fazemos isto, estamos ligando tanto o bloco `then` quanto o `catch` na mesma Promise `areYouStudent` , perceba que estamos passando dois parâmetros para a função `then`,  ou então diretamente na Promise criada no segundo caso, não há diferenças. Vamos ter este gráfico
     
-    ![thenCatch (1)](/home/mequi/summerJob/imagensPromises/thenCatch (1).png)
+    <img src="imagensPromises/thenCatch (1).png">
 
   Porem caso ocorra um erro no `.then`, o `.catch` não vai conseguir capturar por não estar ligado ao `.then` , vamos ver este exemplo para entender.
 
@@ -174,7 +174,9 @@
 
   Desta forma ao executarmos o código, veremos um erro no `terminal` **triggerUncaughtException(err, true /* fromPromise */);** , este erro acontece, porque o `.catch` não está ligado ao `.then`, e o mesmo da erro, por isso colocamos o `.catch` sempre ao final. 
 
-  ![thenSeparado](/home/mequi/summerJob/imagensPromises/thenSeparado.png)
+  
+
+  <img src="imagensPromises/thenSeparado.png">
 
    Vamos ultilizar o `.catch` ao final do `.then` 
 
@@ -214,7 +216,9 @@
 
   
 
-  ![catch](/home/mequi/summerJob/imagensPromises/catch.png)
+  <img src="imagensPromises/catch.png">
+
+  
 
   No exemplo abaixo vamos encadear 2 `.then` a nossa Promise e vamos colocar o `.catch` ao final
 
@@ -267,7 +271,9 @@
 
   
 
-  ![dolble](/home/mequi/summerJob/imagensPromises/dolble.png)
+  <img src="imagensPromises/dolble.png">
+
+  
 
   Podemos também tratar o erro para cada requisição que fizermos.
 
@@ -320,7 +326,7 @@
 
   Veja que, mesmo após não passar na `primeiraProva`, continuou sendo executado, podemos usar este método quando precisamos que mesmo após a primeira requisição falhar ela continue seguindo para as próximas requisições.
 
-  ![thenentaocatch](/home/mequi/summerJob/imagensPromises/thenentaocatch.png)
+  <img src="imagensPromises/thenentaocatch.png">
 
   Podemos ficar falando sobre Promises um ano inteiro, mas para entendermos mesmo como elas funcionam precisamos por a mão na massa, bora pros exercícios?!
 
