@@ -9,7 +9,7 @@
 - ##### Você será capaz de:
 
   - Fazer Promises e como utilizar seus retornos.
-  -  Fazer encadeamento de Promises com then e catch.
+  - Fazer encadeamento de Promises com then e catch.
 
 - ##### Porque isso é importante?
 
@@ -110,7 +110,7 @@
     Vamos entender o encadeamento de uma Promise com then e catch, é muito importante para entendermos o que está acontecendo, cada forma que encadeamos nossas requisições, vamos ter resultados diferentes.
 
     ```javascript
-  // Ambos os callbacks estão ligados a areYouStudent
+    // Ambos os callbacks estão ligados a areYouStudent
     const youAreStudent = new Promise((resolve, reject) =>{
     let student = true;
       if(student === true){
@@ -130,12 +130,16 @@
           reject('Hum..., você não é um aluno, desculpe')
       }}).then((res) => console.log(res), (rej) => console.error(rej))
     ```
+
     
-    
-    
+
     Quando fazemos isto, estamos ligando tanto o bloco `then` quanto o `catch` na mesma Promise `areYouStudent` , perceba que estamos passando dois parâmetros para a função `then`,  ou então diretamente na Promise criada no segundo caso, não há diferenças. Vamos ter este gráfico
+
     
     <img src="imagensPromises/thenCatch (1).png">
+=======
+
+    
 
   Porem caso ocorra um erro no `.then`, o `.catch` não vai conseguir capturar por não estar ligado ao `.then` , vamos ver este exemplo para entender.
 
